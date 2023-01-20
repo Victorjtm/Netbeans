@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
-
 package netbeans.entornos;
 
 import java.util.Scanner;
@@ -13,7 +12,7 @@ import java.util.Scanner;
  */
 public class Entornos {
 
-        public static boolean validaEntrada(String entrada) {
+    public static boolean validaEntrada(String entrada) {
         boolean valido = true;
         if (entrada.length() > 2) {
             valido = false;
@@ -26,7 +25,7 @@ public class Entornos {
 
     public static void main(String[] args) {
         // declaracion variables
-        
+
         int cuenta = 0;
         int producto = 0;
         //String obj;
@@ -35,7 +34,7 @@ public class Entornos {
         Scanner lectura = new Scanner(System.in);
         System.out.println("Ingrese un numero del 1 al 30: ");
         String numero = lectura.next();
-        
+
         // validacion numero de que es numero y maximo dos cifras
         // System.out.println(validaEntrada(numero));
         if (validaEntrada(numero)) {
@@ -68,8 +67,8 @@ public class Entornos {
                 //tercer bucle
                 System.out.println("TERCER CON BUCLE DOWHILE HASTA 10");
                 System.out.println("Tabla de multiplicar del " + numero);
-                System.out.println(".............................. ");
                 do {
+                System.out.println(".............................. ");
                     producto = numeroreal * cuenta;
                     System.out.println(numeroreal + " X " + cuenta + " = " + producto);
                     cuenta++;
