@@ -32,6 +32,7 @@ public class Entornos {
 
         //recogida del numero por teclado
         Scanner lectura = new Scanner(System.in);
+        System.out.println("Tabla de multiplicar ");
         System.out.println("Ingrese un numero del 1 al 30: ");
         String numero = lectura.next();
 
